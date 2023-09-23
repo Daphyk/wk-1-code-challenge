@@ -12,5 +12,5 @@ E: fewer than 40
 # Getting started
 * Run the program: use javascript environment, such as the terminal, run node grade.js.
 * Input: When the software is run, it will request the user to enter a student's grade between 0 and 100.
-* Output: The application will generate the corresponding grade based on the provided marks and display it in an alert box.
-* Validation: The application includes input validation to guarantee that the marks entered are within the defined range. If the input is invalid, the user will be prompted to submit valid marks. The application will keep prompting the user until proper marks are entered. Once legitimate marks have been input and the grade has been shown, the
+* Output: The program will generate the corresponding grade based on the provided marks and display it in an alert box.
+* Validation: The program includes input validation to guarantee that the marks entered are within the defined range. If the input is invalid, the user will be prompted to submit valid marks. The program will keep prompting the user until proper marks are entered. Once legitimate marks have been input and the grade has been shown, the program will terminate.
