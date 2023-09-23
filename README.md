@@ -27,7 +27,9 @@ Speed Detector program detects demerit points based on the speed of a car. It as
 * Run the program: run node speed-detector.js on terminal.
 * Input: When the software is run, it will request the user to enter a cars's speed in km/h.
 * Output: The program will generate and show any of the subsequent messages in accordance with the input speed:
-* * "OK": If your speed is below or equivalent to that of the authorized limit (70 km/h).
-* * "Points: X": If demerit points for speeding have been collected (up to a maximum of 12 points).
-* * "License suspended": If the motorist builds up beyond 12 demerit points, his or her license is suspended.
+** "OK": If your speed is below or equivalent to that of the authorized limit (70 km/h).
+** "Points: X": If demerit points for speeding have been collected (up to a maximum of 12 points).
+** "License suspended": If the motorist builds up beyond 12 demerit points, his or her license is suspended.
 * Validation: The program includes input validation to guarantee that the speed entered is within the defined range. If the input is invalid, the user will be prompted to submit valid speed. The program will keep prompting the user until proper speed is entered. Once legitimate speed has been input and the message has been shown, the program will terminate.
+
+When the application is executed, it will ask users to input the car's speed. Assume the user types "80 km/h." After that, the program will generate the demerit points and present the outcome using an alert, including "Points: 2."
