@@ -1,30 +1,34 @@
-//netSalary function 
-function calculateNetSalary(basicSalary, benefits ) {
 
-  const grossSalary = basicSalary + benefits;
+//initialized detectDemeritPoints function
+function detectDemeritPoints(speed) {
+    const speedLimit = 70;
+    const kmPerDemeritPoint = 5;
+  
+    if (speed <= speedLimit) {
+      return "Ok";
+    } else {
+      const demeritPoints = Math.floor((speed - speedLimit) / kmPerDemeritPoint);
+      if (demeritPoints <= 12) {
+        return `Points: ${demeritPoints}`;
+      } else {
+        return "License suspended";
+      }
+    }
+  }
+  
+  // function speedDetector
+  function speedDetector() {
+    const input = prompt("Enter the car speed in (km/h):");
+    const speed = parseInt(input);
+  
+    if (!isNaN(speed)) {
+      const result = detectDemeritPoints(speed);
+      alert(result);
+    } else {
+      alert("Invalid input. Enter a valid speed as a number.");
+    }
+  }
 
-  // Calculate the PAYE (Pay As You Earn) tax.
-  const PAYE = grossSalary * 0.3;
-
-  // Calculate the NHIF (National Hospital Insurance Fund) deduction.
-  const NHIFDeduction = grossSalary * 0.05;
-
-  const NSSFDeduction = grossSalary * 0.06;
-
-  const netSalary = grossSalary - PAYE - NHIFDeduction - NSSFDeduction;
-
-  const housinglevi =grossSalary - 0.15;
-
-  return netSalary;
-}
-
-
-//function to get user input and calculate net salary
-function getUserInputAndCalculateSalary() {
-  const netSalary = calculateNetSalary(parseFloat(basicSalary), parseFloat(benefits));
-}
-
-
-// Print the net salary.
-console.log("Net salary:", netSalary);
+  //calling the function to detect speed and demerit ponts
+  speedDetector();
 
