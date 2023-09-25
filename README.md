@@ -40,3 +40,6 @@ This program is yet to be updated. It is supposed to calculate net salary based 
 ## Features
 - Determines gross salary, PAYE tax, NHIF, and NSSF deductions.
 - Shows the net salary after taxes and contributions are deducted.
+
+# Getting started
+* Run the program: run node netpay.js on the terminal.
